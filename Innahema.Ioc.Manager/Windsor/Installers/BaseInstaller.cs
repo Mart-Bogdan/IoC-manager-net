@@ -65,7 +65,7 @@ namespace Innahema.Ioc.Manager.Windsor.Installers
                 .Where(a=>a!=null)
                 //.Where(a => a.FullName.StartsWith("Samuel"))
                 .SelectMany(a => a.ExportedTypes)
-                .Where(t => t.IsClass && !typeof(Attribute).IsAssignableFrom(t) && !t.IsEnum && !t.IsValueType)
+                .Where(t => t.IsClass && !typeof(Attribute).IsAssignableFrom(t) && !t.IsEnum && !t.IsValueType && !t.IsAbstract)
                 .ToList();
             return typesFromThisApplication;
         }
