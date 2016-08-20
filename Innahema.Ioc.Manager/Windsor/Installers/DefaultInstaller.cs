@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using System.Reflection;
-using System.Web.Mvc;
 using Bender.Reflection;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
@@ -14,8 +13,7 @@ namespace Innahema.Ioc.Manager.Windsor.Installers
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
             var allTypes = base.GetTypesFromThisApplication();
-            foreach (var type in allTypes.Where(t => !t.GetCustomAttributes().OfType<BaseIoCAttribute>().Any()
-                                                  && !t.CanBeCastTo<IController>()))
+            foreach (var type in allTypes.Where(t => !t.GetCustomAttributes().OfType<BaseIoCAttribute>().Any()))
             {
                 var type1 = type;
                 var interfaces = GetServiceTypes(type);
