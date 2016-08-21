@@ -2,7 +2,7 @@
 
 namespace Innahema.Ioc.Common.Interfaces
 {
-    public interface IScopedServiceGetter
+    public interface IScopedServiceLocator
     {
         IServiceContainer<T> GetService<T>();
         IServiceContainer<T> GetService<T>(Type type);

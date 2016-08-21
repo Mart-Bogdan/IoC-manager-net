@@ -50,7 +50,8 @@
     <Compile Include="Attributes\IgnoreComponentAttribute.cs" />
     <Compile Include="Attributes\RequestScopeAttribute.cs" />
     <Compile Include="Attributes\SingletonScopeAttribute.cs" />
-    <Compile Include="Interfaces\IScopedServiceGetter.cs" />
+    <Compile Include="Interfaces\ICustomScopeMangement.cs" />
+    <Compile Include="Interfaces\IScopedServiceLocator.cs" />
     <Compile Include="Interfaces\IServiceContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

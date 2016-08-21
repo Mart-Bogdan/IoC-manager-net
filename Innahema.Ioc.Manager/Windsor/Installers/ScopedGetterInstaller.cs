@@ -15,7 +15,7 @@ namespace Innahema.Ioc.Manager.Windsor.Installers
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
-            container.Register(Component.For<IScopedServiceGetter>().ImplementedBy<ScopedServiceGetter>().LifestyleTransient());
+            container.Register(Component.For<IScopedServiceLocator>().ImplementedBy<ScopedServiceLocator>().LifestyleTransient());
         }
     }
 }

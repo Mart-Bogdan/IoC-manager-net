@@ -4,10 +4,10 @@ using Innahema.Ioc.Common.Interfaces;
 
 namespace Innahema.Ioc.Manager.Windsor.ServiceLocation
 {
-    public class ScopedServiceGetter : IScopedServiceGetter
+    public class ScopedServiceLocator : IScopedServiceLocator
     {
         private readonly IKernel _kernel;
-        public ScopedServiceGetter(IKernel kernel)
+        public ScopedServiceLocator(IKernel kernel)
         {
             _kernel = kernel;
         }

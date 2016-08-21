@@ -73,13 +73,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\IIocFacade.cs" />
+    <Compile Include="Windsor\CustomScopes\CustomScopeMangement.cs" />
     <Compile Include="Windsor\CustomScopes\HybridPerWebRequestScopedScopeAccessor.cs" />
+    <Compile Include="Windsor\Installers\CustomScopeMangementInstaller.cs" />
     <Compile Include="Windsor\Installers\Helper.cs" />
     <Compile Include="Windsor\Installers\ScopedGetterInstaller.cs" />
     <Compile Include="Windsor\WindsorFacade.cs" />
     <Compile Include="Core\IocManager.cs" />
     <Compile Include="Windsor\ServiceLocation\ServiceContainer.cs" />
-    <Compile Include="Windsor\ServiceLocation\ScopedServiceGetter.cs" />
+    <Compile Include="Windsor\ServiceLocation\ScopedServiceLocator.cs" />
     <Compile Include="Windsor\Utils\GenericMethodWrapper.cs" />
     <Compile Include="Windsor\Installers\BaseInstaller.cs" />
     <Compile Include="Windsor\Installers\ConfigSectionInstaller.cs" />

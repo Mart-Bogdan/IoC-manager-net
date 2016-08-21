@@ -46,7 +46,7 @@ namespace Innahema.Ioc.Manager.Windsor
 
         public IServiceContainer<T> GetServiceContainer<T>()
         {
-            return _container.Resolve<IScopedServiceGetter>().GetService<T>();
+            return _container.Resolve<IScopedServiceLocator>().GetService<T>();
         }
 
         public  void Stop()
